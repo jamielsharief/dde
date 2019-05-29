@@ -2,14 +2,30 @@
 
 This is my DDE ripped from my PHP framework [OriginPHP](https://www.originphp.com)
 
+It has the following
+
+ - Php
+ - MySQL
+ - Memcache
+ - Redis
+ - PostgreSQL
+ - XDebug
+ - PHPUnit
+ - Composer
 
 ## Installation
 
 Install [Docker Desktop](https://www.docker.com/products/docker-desktop)
 
-Copy the files into the root directory of your project.
+Go to your project directory and download the files
+```
+$ cd my-project
+$ git clone https://github.com/jamielsharief/dde .
+```
 
-First you need to build the container
+> Remove the .git folder (e.g. rm -rf .git)
+
+First you will need to build the container
 
 ```linux
 $ docker-compose build
