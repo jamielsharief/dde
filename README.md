@@ -17,13 +17,12 @@ It has the following
 
 Install [Docker Desktop](https://www.docker.com/products/docker-desktop)
 
-Go to your project directory and download the files
-```
-$ cd my-project
-$ git clone https://github.com/jamielsharief/dde .
-```
+Go to your project run the composer require command.
 
-> Remove the .git folder (e.g. rm -rf .git)
+```
+$ cd <folder>
+$ composer require jamielsharief/dde
+```
 
 First you will need to build the container
 
