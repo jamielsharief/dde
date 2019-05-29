@@ -9,6 +9,6 @@
         }
     ],
     "require": {
-      "jamiel-sharief/dde": "dev-master"
+      "jamiel-sharief/dde": "*"
     }
   }
