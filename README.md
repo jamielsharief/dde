@@ -67,3 +67,44 @@ $ docker-compose down
 ```
 
 Any questions or suggestions, use the [https://github.com/jamielsharief/dde/issues](https://github.com/jamielsharief/dde/issues).
+
+## Using PostgreSQL instead of MySQL
+
+Adjust the db node under services in the `docker-compose.yml` file. (Currently MySQL stuff). Don't use tabs in Yaml files.
+
+```yaml
+  db:
+    image: postgres
+    volumes:
+      - pg-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+    ports:
+        - "5432:5432"
+```
+
+Change name of the volume in the volumes node so it looks like this
+
+```yaml
+volumes:
+  pg-data:
+```
+
+## Using Redis
+
+To use Redis add the following under the services node after the db node in the  `docker-compose.yml` file.
+
+```yaml
+ redis:
+    image: redis
+```
+
+## Using Memcached
+
+To use Memcached add the following under the services node after the db node in the `docker-compose.yml` file.
+
+```yaml
+  memcached:
+    image: memcached
+```
