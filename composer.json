@@ -1,7 +1,6 @@
 {
     "name": "jamielsharief/dde",
     "description": "Dockerized Development Environment (PHP)",
-    "type": "project",
     "license": "MIT",
     "require": {
       "php": ">=7.0.0"
