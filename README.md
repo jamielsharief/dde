@@ -25,7 +25,7 @@ You can now access the server at [http://localhost:8000](http://localhost:8000).
 
 To access container.
 
-To access the MySQL client you will first need to access the container, then connect using the hostname db since the database is also run in a docker container. If you want to access MySQL from your computer (not from within the contianer) then use localhost. 
+To access the MySQL client you will first need to access the container, then connect using the hostname db since the database server is also run in a docker container. If you want to access MySQL from your computer (not from within the contianer) then use localhost. 
 
 > Inside the contianer the MySQL server hostname is db not localhost
 
