@@ -70,7 +70,8 @@ Any questions or suggestions, use the [https://github.com/jamielsharief/dde/issu
 
 ## Using PostgreSQL instead of MySQL
 
-Adjust the db node under services in the `docker-compose.yml` file. (Currently MySQL stuff). Don't use tabs in Yaml files.
+Adjust the db node under services in the `docker-compose.yml` file. (Currently MySQL stuff). 
+> Don't use tabs in Yaml files.
 
 ```yaml
   db:
@@ -107,4 +108,17 @@ To use Memcached add the following under the services node after the db node in 
 ```yaml
   memcached:
     image: memcached
+```
+
+## Using XDebug
+
+Xdebug is installed, but it causes serious performance issues.
+
+To enable this for the command line access the Docker container, then echo the settings into the cli configuration,
+these will be gone next time you restart.
+
+```
+$ docker-compose run app bash
+$ echo 'zend_extension="/usr/lib/php/20170718/xdebug.so"' >> /etc/php/7.2/cli/php.ini
+$ echo 'xdebug.default_enable=0' >> /etc/php/7.2/cli/php.ini
 ```
