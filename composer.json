@@ -2,10 +2,13 @@
     "name": "jamielsharief/dde",
     "description": "Dockerized Development Environment (PHP)",
     "license": "MIT",
+    "repositories": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/jamielsharief/dde"
+        }
+    ],
     "require": {
-      "php": ">=7.0.0"
-    },
-    "config": {
-        "vendor-dir": "./"
+      "jamiel-sharief/dde": "dev-master"
     }
   }
