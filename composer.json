@@ -1,0 +1,12 @@
+{
+    "name": "jamielsharief/dde",
+    "description": "Dockerized Development Environment (PHP)",
+    "license": "MIT",
+    "type": "custom-installer",
+    "require": {
+        "jamielsharief/custom-installer": "*"
+    },
+    "extra": {
+      "directory": "./"
+    }
+  }
