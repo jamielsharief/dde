@@ -38,13 +38,13 @@ $ docker-compose up
 
 You can now access the server at [http://localhost:8000](http://localhost:8000).
 
-To access container.
+To access the MySQL client you will first need to access the Docker container, then connect using the hostname `db` since the database server is also run in a Docker container. 
 
-To access the MySQL client you will first need to access the container, then connect using the hostname db since the database server is also run in a docker container. If you want to access MySQL from your computer (not from within the contianer) then use localhost. 
+If you want to access MySQL from your computer (not from within the Docker container) such as with MySQL admin program or a locally installed MySQL client then use localhost and port 3306.
 
 > Inside the contianer the MySQL server hostname is db not localhost
 
-To access the container
+To access the Docker container
 
 ```linux
 $ docker-compose run app bash
@@ -60,8 +60,10 @@ The username is `root` and password is `root`.
 
 > Change the password in the docker files if you are thinking of deploying this container.
 
-To shutdown 
+To shutdown the Docker container:
 
 ```linux
 $ docker-compose down
 ```
+
+Any questions or suggestions, use the [https://github.com/jamielsharief/dde/issues](https://github.com/jamielsharief/dde/issues).
