@@ -15,25 +15,11 @@ It has the following
 
 ## Installation
 
-Install [Docker Desktop](https://www.docker.com/products/docker-desktop)
+Install [Docker Desktop](https://www.docker.com/products/docker-desktop) first.
 
-###  To install with Composer
-
-If you are adding to an existing project (that was not just downloaded/created with Composer), then you might need to run `composer update`, if you don't want to do that, then you will need to install manually.
-
-```linux
-$ cd <folder>
-$ composer require jamielsharief/dde
-```
-
-### To install manually
-
-Copy the `Dockerfile`, `docker-compose.yml` and `apache.conf` to your project root directory. Create a folder called logs, this is where Apache will store the logs, if you do not do this Apache will not start. You can change this in the `apache.conf` file.
-
-Go to your project run the composer require command.
+Copy the `Dockerfile`, `docker-compose.yml` and `apache.conf` to your project root directory and then create a folder called logs, this is where Apache will store the logs, if you do not do this Apache will not start. You can change this in the `apache.conf` file.
 
 ## Using the Docker Container
-
 
 First you will need to build the container
 
